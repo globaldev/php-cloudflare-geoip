@@ -1,6 +1,8 @@
 <?php
 /* Country Toggle start */
-    # Select the countries that you have WLD Sites for. 1 for on, 0 for off
+    # Select the countries that you have WLD Sites for/want enabled.
+    # 'on' to enabled
+    # 'off' to disable.
     const AUSTRALIA_ENABLED         = 'on';
     const CANADA_ENABLED            = 'on';
     const IRELAND_ENABLED           = 'on';
