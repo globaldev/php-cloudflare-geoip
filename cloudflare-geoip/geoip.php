@@ -1,6 +1,6 @@
 <?php
 /**
- * Geoip Script (utlizing Cloudflare variable)
+ * Geoip Script (utilizing Cloudflare variable)
  *
  *
  */
