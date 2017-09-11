@@ -1,5 +1,5 @@
 <?php
-require_once("cloudflare-geoip/geoip.cnf.php");
+require_once("cloudflare-geoip/geoip.config.php");
 
 if (file_exists("cloudflare-geoip/geoip.php")) {
 	include "cloudflare-geoip/geoip.php";
@@ -8,10 +8,10 @@ if (file_exists("cloudflare-geoip/geoip.php")) {
 	$geoip->country_check($country);
 	define("WLD_SITE_URL", "http://" . APP_URL);
 } else {
-	define("WLD_SITE_ID", DEFAULT_COUNTRY[0]);
-	define("WLD_SITE_URL", "http://" . DEFAULT_COUNTRY[1]);
-	define("WLD_COUNTRY_CODE", DEFAULT_COUNTRY[2]);
-	define("WLD_COUNTRY_NAME", DEFAULT_COUNTRY[3]);
+	define("WLD_SITE_ID", DEFAULT_COUNTRY['WLD_SITE_ID']);
+	define("WLD_SITE_URL", "http://" . DEFAULT_COUNTRY['WLD_SITE_URL']);
+	define("WLD_COUNTRY_CODE", DEFAULT_COUNTRY_CODE);
+	define("WLD_COUNTRY_NAME", DEFAULT_COUNTRY_NAME);
 }
 
 define("WLD_SSL_APP_URL", "https://secure2.whitelabeldating.com");
