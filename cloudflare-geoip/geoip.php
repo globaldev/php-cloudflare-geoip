@@ -10,13 +10,13 @@ class Geoip
 {
 
     private $country_names = array(
-        "AU" => "Australia",
-        "CA" => "Canada",
-        "IE" => "Ireland",
-        "NZ" => "New Zealand",
-        "SA" => "South Africa",
-        "UK" => "United Kingdom",
-        "US" => "United States"
+        "AU" => array("AU" => "Australia"),
+        "CA" => array("CA", "Canada"),
+        "IE" => array("IE", "Ireland"),
+        "NZ" => array("NZ", "New Zealand"),
+        "ZA" => array("SA", "South Africa"),
+        "GB" => array("UK", "United Kingdom"),
+        "US" => array("US", "United States")
     );
 
     private $country_site;
@@ -53,8 +53,8 @@ class Geoip
     */
     private function set_vars($site_details, $country_code)
     {
-        define("WLD_COUNTRY_CODE", $country_code);
-        define("WLD_COUNTRY_NAME", $this->country_names[$country_code]);
+        define("WLD_COUNTRY_CODE", $this->country_names[$country_code][0]);
+        define("WLD_COUNTRY_NAME", $this->country_names[$country_code][1]);
         define("WLD_SITE_ID", $site_details["WLD_SITE_ID"]);
         define("WLD_SITE_URL", $site_details["WLD_SITE_URL"]);
     }
