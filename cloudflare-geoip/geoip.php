@@ -4,6 +4,8 @@
  *
  *
  */
+require 'geoip.config.php';
+
 class Geoip
 {
 
