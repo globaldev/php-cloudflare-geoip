@@ -10,13 +10,13 @@
     $country_site["CA"] = array("WLD_SITE_ID"=>"0000", "WLD_SITE_URL"=>"premium.whitelabeldating.com"); # Canada
     $country_site["IE"] = array("WLD_SITE_ID"=>"0000", "WLD_SITE_URL"=>"premium.whitelabeldating.com"); # Ireland
     $country_site["NZ"] = array("WLD_SITE_ID"=>"0000", "WLD_SITE_URL"=>"premium.whitelabeldating.com"); # New Zealand
-    $country_site["SA"] = array("WLD_SITE_ID"=>"0000", "WLD_SITE_URL"=>"premium.whitelabeldating.com"); # South Africa
-    $country_site["UK"] = array("WLD_SITE_ID"=>"0000", "WLD_SITE_URL"=>"premium.whitelabeldating.com"); # United Kingdom
+    $country_site["ZA"] = array("WLD_SITE_ID"=>"0000", "WLD_SITE_URL"=>"premium.whitelabeldating.com"); # South Africa
+    $country_site["GB"] = array("WLD_SITE_ID"=>"0000", "WLD_SITE_URL"=>"premium.whitelabeldating.com"); # United Kingdom
     $country_site["US"] = array("WLD_SITE_ID"=>"0000", "WLD_SITE_URL"=>"premium.whitelabeldating.com"); # United States
 
-    # Set your default country code
-    # options: AU, CA, IE, NZ, SA, UK or US
-    const DEFAULT_COUNTRY = "UK";
+    # Set your default country code (if no suitable country can be found for a user)
+    # options: AU, CA, IE, NZ, ZA, GB or US
+    const DEFAULT_COUNTRY = "GB";
 
 
 
