@@ -1,6 +1,4 @@
 <?php
-require_once("cloudflare-geoip/geoip.config.php");
-
 if (file_exists("cloudflare-geoip/geoip.php")) {
 	include "cloudflare-geoip/geoip.php";
 	$geoip = new Geoip();
