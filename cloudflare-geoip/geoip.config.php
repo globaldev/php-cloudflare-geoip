@@ -2,9 +2,9 @@
     $country_site = array();
 
     /* WLD Site Details for your countries */
-    # 1. Uncomment the country to enable it removing '#' from the start.
-    # 2. Enter the WLD Site ID for your country in place of 0000.
-    # 3. Enter the WLD Site URL for your country in place of premium.whitelabeldating.com.
+    # 1. Add a hash '#' at the start of any $country_site you wish to NOT use.
+    # 2. Enter the WLD Site ID for your countries in place of 0000.
+    # 3. Enter the WLD Site URL for your countries in place of premium.whitelabeldating.com.
 
     $country_site["AU"] = array("WLD_SITE_ID"=>"0000", "WLD_SITE_URL"=>"premium.whitelabeldating.com"); # Australia
     $country_site["CA"] = array("WLD_SITE_ID"=>"0000", "WLD_SITE_URL"=>"premium.whitelabeldating.com"); # Canada
