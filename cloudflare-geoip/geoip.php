@@ -49,9 +49,10 @@ class Geoip
     * Set constants for the country found (or not found).
     * @access public
     * @param array $site_details Site details applied from geoip.cnf.php
+    * @param array $country_code Country details applied from geoip.cnf.php
     * @return void
     */
-    private function set_vars($site_details)
+    private function set_vars($site_details, $country_code)
     {
         define("WLD_COUNTRY_CODE", $this->country_names[$country_code][0]);
         define("WLD_COUNTRY_NAME", $this->country_names[$country_code][1]);
