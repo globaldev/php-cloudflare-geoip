@@ -4,8 +4,10 @@ PHP based GeoIP logic supported using Cloudflare. For use on landing pages assoc
 ## Contents
 
 * Creating a [Cloudflare account][cf].
+* Running your domain through Cloudflare.
 * Enabling Cloudflare SSL (optional).
-* Implementing GeoIP code onto a landing page.
+* Implementing Cloudflare GeoIP code onto an SSL landing page.
+* Implementing Cloudflare GeoIP code on a non SSL landing page.
 
 # Instructions
 
