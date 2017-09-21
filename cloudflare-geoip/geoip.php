@@ -67,8 +67,11 @@ class Geoip
         define("WLD_SITE_ID", $site_details["WLD_SITE_ID"]);
         define("WLD_SITE_URL", $site_details["WLD_SITE_URL"]);
         define("WLD_SSL_APP_URL", "https://secure2.whitelabeldating.com");
-        define("WLD_STANDARD_SIGNUP_FORM", "http://" . WLD_SITE_URL . "/signup.cfm");
         define("WLD_SSL_SIGNUP_FORM", WLD_SSL_APP_URL . "/signup.cfm?wldsite=" . WLD_SITE_ID);
+        define("WLD_SSL_LOGIN_FORM", WLD_SSL_APP_URL . "/login/?wldsite=" . WLD_SITE_ID);
+        define("WLD_STANDARD_SIGNUP_FORM", "http://" . WLD_SITE_URL . "/signup.cfm");
+        define("WLD_STANDARD_LOGIN_FORM", "http://" . WLD_SITE_URL . "/login");
+        define("WLD_STANDARD_LOGIN_LINK", WLD_STANDARD_LOGIN_FORM);
     }
 }
 ?>
