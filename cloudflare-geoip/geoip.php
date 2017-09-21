@@ -10,7 +10,7 @@ class Geoip
 {
 
     private $country_names = array(
-        "AU" => array("AU" => "Australia"),
+        "AU" => array("AU", "Australia"),
         "CA" => array("CA", "Canada"),
         "IE" => array("IE", "Ireland"),
         "NZ" => array("NZ", "New Zealand"),
