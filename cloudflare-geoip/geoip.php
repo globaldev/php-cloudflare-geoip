@@ -34,11 +34,15 @@ class Geoip
     */
     public function country_check()
     {
-        $geoip_country_code = (isset($_SERVER["HTTP_CF_IPCOUNTRY"]) ? $_SERVER["HTTP_CF_IPCOUNTRY"] : "GB");
+        if (!defined('DEFAULT_COUNTRY')) {
+            const DEFAULT_COUNTRY = "GB";
+        }
+
+        $geoip_country_code = (isset($_SERVER["HTTP_CF_IPCOUNTRY"]) ? $_SERVER["HTTP_CF_IPCOUNTRY"] : DEFAULT_COUNTRY);
 
         if (isset($this->country_site[$geoip_country_code])) {
             $this->set_vars($this->country_site[$geoip_country_code], $geoip_country_code);
-        } else if (DEFAULT_COUNTRY !== null && isset($this->country_site[DEFAULT_COUNTRY])) {
+        } else if (isset($this->country_site[DEFAULT_COUNTRY])) {
             # site settings for this country code don't exist, use the default site
             $this->set_vars($this->country_site[DEFAULT_COUNTRY], DEFAULT_COUNTRY);
         } else {
