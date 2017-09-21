@@ -32,8 +32,10 @@ class Geoip
     * @param string $geoip_country_code Country code from Cloudflare
     * @return void
     */
-    public function country_check($geoip_country_code)
+    public function country_check()
     {
+        $geoip_country_code = (isset($_SERVER["HTTP_CF_IPCOUNTRY"]) ? $_SERVER["HTTP_CF_IPCOUNTRY"] : "GB");
+
         if (isset($this->country_site[$geoip_country_code])) {
             $this->set_vars($this->country_site[$geoip_country_code], $geoip_country_code);
         } else if (DEFAULT_COUNTRY !== null && isset($this->country_site[DEFAULT_COUNTRY])) {
